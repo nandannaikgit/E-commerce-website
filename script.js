@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   let message = document.getElementById("message");
 
   if (username === "" || password === "") {
-    message.innerHTML = "<p class='text-danger'>⚠ Please fill in all fields.</p>";
+    message.innerHTML = "<p class='text-danger'> Please fill in all fields.</p>";
   } else if (password.length < 6) {
     message.innerHTML = "<p class='text-warning'> Password must be at least 6 characters.</p>";
   } else {
