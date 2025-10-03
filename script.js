@@ -9,13 +9,13 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   if (username === "" || password === "") {
     message.innerHTML = "<p class='text-danger'>⚠ Please fill in all fields.</p>";
   } else if (password.length < 6) {
-    message.innerHTML = "<p class='text-warning'>🔑 Password must be at least 6 characters.</p>";
+    message.innerHTML = "<p class='text-warning'> Password must be at least 6 characters.</p>";
   } else {
     // Save session
     localStorage.setItem("isLoggedIn", "true");
     localStorage.setItem("username", username);
 
-    message.innerHTML = "<p class='text-success'>✅ Login successful! Redirecting...</p>";
+    message.innerHTML = "<p class='text-success'> Login successful! Redirecting...</p>";
 
     // Redirect after 2 sec
     setTimeout(() => {
